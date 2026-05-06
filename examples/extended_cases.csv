@@ -1,0 +1,7 @@
+name,demand,capacity,latency,risk,weight,score,decision,reason
+baseline,64,90,20,15,8,85,review,ml utilities baseline scenario exercises the review path for bounded failure handling
+pressure,76,68,30,21,11,27,review,ml utilities pressure scenario exercises the review path for bounded failure handling
+surge,107,98,24,17,12,169,review,ml utilities surge scenario exercises the review path for bounded failure handling
+degraded,63,55,35,29,6,-103,review,ml utilities degraded scenario exercises the review path for bounded failure handling
+recovery,86,107,22,13,11,166,review,ml utilities recovery scenario exercises the review path for bounded failure handling
+boundary,78,80,23,16,7,83,review,ml utilities boundary scenario exercises the review path for bounded failure handling

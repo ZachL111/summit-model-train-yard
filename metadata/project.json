@@ -1,0 +1,32 @@
+{
+  "index": 288,
+  "phase": 2,
+  "batch": 32,
+  "name": "summit-model-train-yard",
+  "planned_name": "summit-model-train-yard",
+  "language": "Haskell",
+  "category": "ML utilities",
+  "goal": "Create a Haskell reference implementation for train workflows, centered on state machine modeling, transition tables, and invalid-transition tests.",
+  "repository_url": "https://github.com/ZachL111/summit-model-train-yard",
+  "verification_command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/verify.ps1",
+  "model": {
+    "inputs": [
+      "demand",
+      "capacity",
+      "latency",
+      "risk",
+      "weight"
+    ],
+    "threshold": 173,
+    "risk_penalty": 7,
+    "latency_penalty": 3,
+    "weight_bonus": 4,
+    "decision_rule": "accept when score is greater than or equal to threshold, otherwise review"
+  },
+  "quality_gates": [
+    "readme constraint scan",
+    "fixture presence check",
+    "metadata JSON parse",
+    "language verifier"
+  ]
+}
