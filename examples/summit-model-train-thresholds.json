@@ -1,0 +1,17 @@
+{
+  "repo": "summit-model-train-yard",
+  "thresholds": {
+    "signal": 3,
+    "slack": 2,
+    "confidence": 2,
+    "drag": 3,
+    "ship": 161,
+    "watch": 126
+  },
+  "terms": [
+    "feature drift",
+    "window width",
+    "metric stability",
+    "explainability"
+  ]
+}

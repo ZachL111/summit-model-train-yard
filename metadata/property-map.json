@@ -1,0 +1,28 @@
+{
+  "repo": "summit-model-train-yard",
+  "language": "Haskell",
+  "category": "ML utilities",
+  "goal": "Create a Haskell reference implementation for train workflows, centered on state machine modeling, transition tables, and invalid-transition tests.",
+  "weights": {
+    "signal": 3,
+    "slack": 2,
+    "confidence": 2,
+    "drag": 3
+  },
+  "thresholds": {
+    "ship": 161,
+    "watch": 126
+  },
+  "properties": [
+    "raising signal cannot reduce score",
+    "raising drag cannot improve score",
+    "lane labels must match configured thresholds",
+    "golden fixture ids must remain unique"
+  ],
+  "fixture_files": [
+    "fixtures/golden/scoreboard.csv",
+    "fixtures/golden/lane-matrix.csv",
+    "fixtures/fuzz/mutations.csv",
+    "fixtures/fuzz/boundary-cases.jsonl"
+  ]
+}
