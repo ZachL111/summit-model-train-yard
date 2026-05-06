@@ -61,3 +61,5 @@ foreach ($pathPattern in $knownPaths) {
 New-Item -ItemType Directory -Force build | Out-Null
 ghc -isrc tests/Test.hs -outputdir build -o build/test.exe
 ./build/test.exe
+
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-summit-model-train-detail.ps1

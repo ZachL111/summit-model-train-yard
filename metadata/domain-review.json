@@ -1,0 +1,73 @@
+{
+  "repo": "summit-model-train-yard",
+  "language": "Haskell",
+  "category": "ML utilities",
+  "goal": "Create a Haskell reference implementation for train workflows, centered on state machine modeling, transition tables, and invalid-transition tests.",
+  "review_model": {
+    "terms": [
+      "feature drift",
+      "window width",
+      "metric stability",
+      "explainability"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "feature drift",
+      "signal": 47,
+      "slack": 28,
+      "drag": 32,
+      "confidence": 89,
+      "score": 115,
+      "lane": "watch"
+    },
+    {
+      "name": "stress",
+      "focus": "window width",
+      "signal": 59,
+      "slack": 27,
+      "drag": 21,
+      "confidence": 56,
+      "score": 138,
+      "lane": "watch"
+    },
+    {
+      "name": "edge",
+      "focus": "metric stability",
+      "signal": 68,
+      "slack": 22,
+      "drag": 23,
+      "confidence": 60,
+      "score": 149,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "explainability",
+      "signal": 62,
+      "slack": 35,
+      "drag": 8,
+      "confidence": 48,
+      "score": 183,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "feature drift",
+      "signal": 79,
+      "slack": 38,
+      "drag": 32,
+      "confidence": 45,
+      "score": 145,
+      "lane": "ship"
+    }
+  ]
+}
